@@ -1,0 +1,25 @@
+{
+  "name": "tagree_test",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.1",
+    "stylelint": "^9.7.1"
+  },
+
+  "scripts": {
+    "start": "gulp debug"
+  },
+
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR"
+  ],
+
+  "engines": {
+    "node": "8.12"
+  }
+}
