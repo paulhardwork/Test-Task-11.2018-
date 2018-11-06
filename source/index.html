@@ -8,22 +8,22 @@
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <a class="page-header__logo" href="#"><img src="" alt="Логотип IndexGlobal"></a>
-        <form class="page-header__searching" action="#" method="post">
-          <ul>
-            <li><a class="page-header__search-item" href="">Products</a></li>
-            <ul class="page-header__sub-menu">
-              <li><a class="page-header__search-item" href="">Sell orders</a></li>
-              <li><a class="page-header__search-item" href="">Buy orders</a></li>
-              <li><a class="page-header__search-item" href="">Company</a></li>
-            </ul>
-          </ul>
-          <input class="page-header__searchrow" type="search" placeholder="Search">
-          <button class="page-header__gosearching" type="submit"><span class="visually-hidden">Искать</span></button>
-        </form>
-        <div class="page-header__userbox">
-          <span class="page-header__username">Ivan Ivanov</span>
-          <button class="page-header__userinfo"><span class="visually-hidden">Открыть информацию о пользователе</span></button>
+        <div class="page-header__top-wrapper">
+        	<a class="page-header__logo" href="#"><img src="img/image-header-logo.png" alt="Логотип IndexGlobal" width="232" height="46"></a>
+        	<form class="page-header__searching" action="#" method="post">
+        	  <select class="page-header__search-menu">
+        	    <option value="products">Products</option>
+              <option value="sell-orders">Sell orders</option>
+              <option value="buy-orders">Buy orders</option>
+              <option value="company">Company</option>
+        	  </select>
+        	  <input class="page-header__searchrow" type="search" placeholder="Search">
+        	  <button class="page-header__gosearching" type="submit"><span class="visually-hidden">Искать</span></button>
+        	</form>
+        	<div class="page-header__userbox">
+        	  <span class="page-header__username">Ivan Ivanov</span>
+        	  <button class="page-header__userinfo"><span class="visually-hidden">Открыть информацию о пользователе</span></button>
+        	</div>
         </div>
       </div>
       <div class="page-header__sectioninfo">
