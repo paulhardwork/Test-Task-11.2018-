@@ -1,0 +1,32 @@
+.context-navigation {
+  width: 320px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.context-navigation__list {
+  .reset-list();
+}
+
+.context-navigation__item {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  color: #666666;
+
+  &:hover {
+    color: #ffffff;
+    background-color: @back-blue;
+  }
+
+  &--active {
+    color: #ffffff;
+    background-color: @back-red;
+
+    &:hover {
+      background-color: @back-red;
+    }
+  }
+}
