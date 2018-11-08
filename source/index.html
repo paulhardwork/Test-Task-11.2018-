@@ -21,176 +21,186 @@
         	  <button class="page-header__gosearching" type="submit"><span class="visually-hidden">Искать</span></button>
         	</form>
         	<div class="page-header__userbox">
-        	  <span class="page-header__username">Ivan Ivanov</span>
+            <span class="page-header__username">Ivan Ivanov</span>
+            <div class="page-header__useravatar"></div>
         	  <button class="page-header__userinfo"><span class="visually-hidden">Открыть информацию о пользователе</span></button>
         	</div>
         </div>
       </div>
       <div class="page-header__sectioninfo">
-        <h1 class="page-header__section-header">Company</h1>
-        <div class="page-header__breadcrumbs">
-          <a href="#" class="page-header__breadcrumb-item">Index</a>
-          <a class="page-header__breadcrumb-item page-header__breadcrumb-item--active">Company</a>
+        <div class="page-header__info-wrapper">
+          <h1 class="page-header__section-header">Company</h1>
+          <div class="page-header__breadcrumbs">
+            <a href="#" class="page-header__breadcrumb-item">Index</a>
+            <a class="page-header__breadcrumb-item page-header__breadcrumb-item--active">Company</a>
+          </div>
         </div>
       </div>
       <div class="page-header__navigation">
-        <div class="page-header__announcements">
-          <p class="page-header__announcement-header">24-29 Raw hides, skins, leather, & ...</p>
-          <p class="page-header__announcement-desc">26 Wool & fine or coarse animal hair, inc ...</p>
+        <div class="page-header__navigation-wrapper">
+          <div class="page-header__announcements">
+            <button class="page-header__announcement-button"><span class="visually-hidden">Развернуть анонсы</span></button> <!-- Не уверен в функционале этой кнопки, не очень понятно из макета-->
+            <div class="page-header__announcement-container">
+              <p class="page-header__announcement-header">24-29 Raw hides, skins, leather, & ...</p>
+              <p class="page-header__announcement-desc">26 Wool & fine or coarse animal hair, inc ...</p>
+            </div>
+          </div>
+          <nav class="page-header__mainnav">
+            <ul class="page-header__listnav">
+              <li><a class="page-header__listnav-item" href="">Company</a></li>
+              <li><a class="page-header__listnav-item" href="">Members Sell</a></li>
+              <li><a class="page-header__listnav-item" href="">Members Buy</a></li>
+              <li><a class="page-header__listnav-item" href="">News</a></li>
+              <li><a class="page-header__listnav-item" href="">Video</a></li>
+              <li><a class="page-header__listnav-item" href="">Events</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="page-header__mainnav">
-          <ul class="page-header__listnav">
-            <li><a class="page-header__listnav-item" href="">Company</a></li>
-            <li><a class="page-header__listnav-item" href="">Members Sell</a></li>
-            <li><a class="page-header__listnav-item" href="">Members Buy</a></li>
-            <li><a class="page-header__listnav-item" href="">News</a></li>
-            <li><a class="page-header__listnav-item" href="">Video</a></li>
-            <li><a class="page-header__listnav-item" href="">Events</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
-    <main>
-      <aside class="context-navigation">
-        <ul class="context-navigation__list">
-          <li><a href="" class="context-navigation__item">My profile</a></li>
-          <li><a href="" class="context-navigation__item">My company</a></li>
-          <li><a href="" class="context-navigation__item">My services</a></li>
-          <li><a href="" class="context-navigation__item">My files</a></li>
-          <li><a href="" class="context-navigation__item">My mail</a></li>
-          <li><a href="" class="context-navigation__item">My favourites</a></li>
-          <li><a href="" class="context-navigation__item">My sell offers</a></li>
-          <li><a href="" class="context-navigation__item">My buy offers</a></li>
-          <li><a href="" class="context-navigation__item">My news</a></li>
-          <li><a href="" class="context-navigation__item">My video</a></li>
-          <li><a href="" class="context-navigation__item">My event</a></li>
-          <li><a href="" class="context-navigation__item">My subscription</a></li>
-        </ul>
-      </aside>
-      <section class="profile-edit">
-        <header>
-          <h2 class="visually-hidden">Inputing your company's data</h2>
-        </header>
-        <div class="promobox profile-edit__promo">
-          <div class="promobox__promobanner"></div>
-        </div>
-        <div class="profile-edit__owner">
-          <img class="profile-edit__owner-photo" src="" alt="Фотография владельца">
-          <div class="profile-edit__owner-data">
-            <h3 class="profile-edit__owner-name">Ivan Ivanov</h3>
-            <p class="profile-edit__owner-tel">
-              <span class="profile-edit__tel-header">Phone number:</span>
-              <span class="profile-edit__tel-number">+79110000000</span>
-            </p>
-            <button class="button profile-edit__owner-button">Edit</button>
-          </div>
-        </div>
-        <form action="#" class="profile-edit__company-data" method="post">
-          <h3 class="profile-edit__header">My Company</h3>
-          <div class="profile-edit__choosing-logo">
-            <div class="profile-edit__logo"><img src="" alt=""></div>
-            <div class="profile-edit__logo-settings">
-              <div class="profile-edit__logo-upload">
-                <input type="file">
-                <button class="button profile-edit__upload-button" type="button">Обзор</button>
+    <main class="main-content">
+      <div class="main-content__container">
+        <aside class="context-navigation main-content__sidebar">
+          <ul class="context-navigation__list">
+            <li><a href="#" class="context-navigation__item">My profile</a></li>
+            <li><a href="#" class="context-navigation__item context-navigation__item--active">My company</a></li>
+            <li><a href="#" class="context-navigation__item">My services</a></li>
+            <li><a href="#" class="context-navigation__item">My files</a></li>
+            <li><a href="#" class="context-navigation__item">My mail</a></li>
+            <li><a href="#" class="context-navigation__item">My favourites</a></li>
+            <li><a href="#" class="context-navigation__item">My sell offers</a></li>
+            <li><a href="#" class="context-navigation__item">My buy offers</a></li>
+            <li><a href="#" class="context-navigation__item">My news</a></li>
+            <li><a href="#" class="context-navigation__item">My video</a></li>
+            <li><a href="#" class="context-navigation__item">My event</a></li>
+            <li><a href="#" class="context-navigation__item">My subscription</a></li>
+          </ul>
+        </aside>
+        <section class="profile-edit main-content__infobox">
+          <div class="profile-edit__wrapper">
+            <header>
+              <h2 class="visually-hidden">Inputing your company's data</h2>
+            </header>
+            <div class="promobox profile-edit__promo">
+              <a class="promobox__promobanner" href="#"><img src="img/image-promobanner.jpg" alt="Рекламный баннер" width="582" height="72"></a>
+            </div>
+            <div class="profile-edit__owner">
+              <img class="profile-edit__owner-photo" src="img/image-owner.jpg" alt="Фотография владельца" width="200" height="150">
+              <div class="profile-edit__owner-data">
+                <h3 class="profile-edit__owner-name">Ivan Ivanov</h3>
+                <p class="profile-edit__owner-tel">
+                  <span class="profile-edit__tel-header">Phone number:</span>
+                  <span class="profile-edit__tel-number">+79110000000</span>
+                </p>
+                <button class="button profile-edit__owner-button">Edit</button>
               </div>
-              <button class="button profile-edit__changelogo-button">Change logo</button>
             </div>
-          </div>
-          <div class="profile-edit__left-fieldset">
-            <div class="profile-edit__field-box">
-              <label for="country">Country<span class="profile-edit__required-field">*</span></label>
-              <select name="company-country" id="country">
-                <option value="Russia">Russia</option>
-                <option value="USA">USA</option>
-                <option value="Germany">Germany</option>
-              </select>
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="region">Region<span class="profile-edit__required-field">*</span></label>
-              <input type="text" name="company-region" id="region">
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="city">City<span class="profile-edit__required-field">*</span></label>
-              <input type="text" name="company-city" id="city">
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="nameeng">Company name (Eng)<span class="profile-edit__required-field">*</span></label>
-              <input type="text" name="company-nameeng" id="nameeng">
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="">Company name (Rus)<span class="profile-edit__required-field">*</span></label>
-              <input type="text" name="company-namerus" id="namerus">
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="shortdesc">Short description<span class="profile-edit__required-field">*</span></label>
-              <textarea name="company-shortdesc" id="shortdesc"></textarea>
-              <span class="profile-edit__fieldcase">100 max</span>
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="fulldesc">Full description<span class="profile-edit__required-field">*</span></label>
-              <textarea name="company-fulldesc" id="fulldesc"></textarea>
-              <span class="profile-edit__fieldcase">500 max</span>
-            </div>
-          </div>
-          <div class="profile-edit__right-fieldset">
-            <div class="profile-edit__field-box">
-              <label for="officeaddress">Office address<span class="profile-edit__required-field">*</span></label>
-              <input type="text" name="company-officeaddress" id="officeaddress">
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="postaddress">Post address<span class="profile-edit__required-field">*</span></label>
-              <input type="text" name="company-postaddress" id="postaddress">
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="inn">INN<span class="profile-edit__required-field">*</span></label>
-              <input type="text" name="company-inn" id="inn">
-            </div>
-            <div class="profile-edit__field-box profile-edit__field-box--dynamic">
-              <div class="profile-edit__wrapper">
-                <label for="phonenum">Phone number</label>
-                <input type="tel" name="company-phonenum" id="phonenum">
+            <form action="#" class="profile-edit__company-data" method="post">
+              <h3 class="profile-edit__header">My Company</h3>
+              <div class="profile-edit__choosing-logo">
+                <div class="profile-edit__logo"><img src="" alt=""></div>
+                <div class="profile-edit__logo-settings">
+                  <div class="profile-edit__logo-upload">
+                    <input type="file">
+                    <button class="button profile-edit__upload-button" type="button">Обзор</button>
+                  </div>
+                  <button class="button profile-edit__changelogo-button">Change logo</button>
+                </div>
               </div>
-              <button class="button profile-edit__addfield"><span class="visually-hidden">Добавить дополнительный номер</span></button>
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="fax">Fax</label>
-              <input type="text" name="company-fax" id="fax">
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="email">E-mail<span class="profile-edit__required-field">*</span></label>
-              <input type="email" name="company-email" id="email">
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="site">Web-site</label>
-              <input type="url" name="company-site" id="site">
-            </div>
+              <div class="profile-edit__left-fieldset">
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="country">Country <span class="profile-edit__required-field">*</span></label>
+                  <select name="company-country" id="country">
+                    <option value="Russia">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                  </select>
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="region">Region <span class="profile-edit__required-field">*</span></label>
+                  <input class="profile-edit__form-field" type="text" name="company-region" id="region">
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="city">City <span class="profile-edit__required-field">*</span></label>
+                  <input class="profile-edit__form-field" type="text" name="company-city" id="city">
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="nameeng">Company name (Eng) <span class="profile-edit__required-field">*</span></label>
+                  <input class="profile-edit__form-field" type="text" name="company-nameeng" id="nameeng">
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="">Company name (Rus) <span class="profile-edit__required-field">*</span></label>
+                  <input class="profile-edit__form-field" type="text" name="company-namerus" id="namerus">
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="shortdesc">Short description <span class="profile-edit__required-field">*</span></label>
+                  <textarea class="profile-edit__form-field" name="company-shortdesc" id="shortdesc"></textarea>
+                  <span class="profile-edit__fieldcase">100 max</span>
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="fulldesc">Full description <span class="profile-edit__required-field">*</span></label>
+                  <textarea class="profile-edit__form-field" name="company-fulldesc" id="fulldesc"></textarea>
+                  <span class="profile-edit__fieldcase">500 max</span>
+                </div>
+              </div>
+              <div class="profile-edit__right-fieldset">
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="officeaddress">Office address <span class="profile-edit__required-field">*</span></label>
+                  <input class="profile-edit__form-field" type="text" name="company-officeaddress" id="officeaddress">
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="postaddress">Post address <span class="profile-edit__required-field">*</span></label>
+                  <input class="profile-edit__form-field" type="text" name="company-postaddress" id="postaddress">
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="inn">INN <span class="profile-edit__required-field">*</span></label>
+                  <input class="profile-edit__form-field" type="text" name="company-inn" id="inn">
+                </div>
+                <div class="profile-edit__field-box profile-edit__field-box--dynamic">
+                  <div class="profile-edit__wrapper">
+                    <label class="profile-edit__sign-field" for="phonenum">Phone number</label>
+                    <input class="profile-edit__form-field" type="tel" name="company-phonenum" id="phonenum">
+                  </div>
+                  <button class="button profile-edit__addfield"><span class="visually-hidden">Добавить дополнительный номер</span></button>
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="fax">Fax</label>
+                  <input class="profile-edit__form-field" type="text" name="company-fax" id="fax">
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="email">E-mail <span class="profile-edit__required-field">*</span></label>
+                  <input class="profile-edit__form-field" type="email" name="company-email" id="email">
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="site">Web-site</label>
+                  <input class="profile-edit__form-field" type="url" name="company-site" id="site">
+                </div>
+              </div>
+              <hr class="profile-edit__separator">
+              <button class="button profile-edit__save-button" type="submit">Save</button>
+              <div class="profile-edit__field-box">
+                <label class="profile-edit__sign-field" for="products">Products <span class="profile-edit__required-field">*</span></label>
+                <textarea class="profile-edit__form-field" name="company-products" id="products"></textarea>
+              </div>
+              <hr class="profile-edit__separator">
+              <button class="button profile-edit__save-button" type="submit">Save</button>
+              <div class="profile-edit__fields-container">
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="shipment">Shipment (Purchases)</label>
+                  <textarea class="profile-edit__form-field" name="company-shipment" id="shipment"></textarea>
+                </div>
+                <div class="profile-edit__field-box">
+                  <label class="profile-edit__sign-field" for="quotas">Capture quotas</label>
+                  <textarea class="profile-edit__form-field" name="company-quotas" id="quotas"></textarea>
+                </div>
+              </div>
+            </form>
           </div>
-          <hr class="profile-edit__separator">
-          <button class="button profile-edit__save-button" type="submit">Save</button>
-          <div class="profile-edit__field-box">
-            <label for="products">Products<span class="profile-edit__required-field">*</span></label>
-            <textarea name="company-products" id="products"></textarea>
-          </div>
-          <hr class="profile-edit__separator">
-          <button class="button profile-edit__save-button" type="submit">Save</button>
-          <div class="profile-edit__fields-container">
-            <div class="profile-edit__field-box">
-              <label for="shipment">Shipment (Purchases)</label>
-              <textarea name="company-shipment" id="shipment"></textarea>
-            </div>
-            <div class="profile-edit__field-box">
-              <label for="quotas">Capture quotas</label>
-              <textarea name="company-quotas" id="quotas"></textarea>
-            </div>
-          </div>
-        </form>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <div class="promobox page-footer__promo">
-        <div class="promobox__promobanner"></div>
-      </div>
+      <a class="promobox__promobanner page-footer__promo"><img src="img/image-promobanner.jpg" alt="Рекламный баннер" width="582" height="72"></a>
       <div class="page-footer__container">
         <div class="page-footer__main">
           <a href="" class="page-footer__logo"><img src="" alt="Логотип"></a>
