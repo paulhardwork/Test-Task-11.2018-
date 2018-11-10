@@ -97,12 +97,15 @@
             </div>
             <form action="#" class="profile-edit__company-data" method="post">
               <h3 class="profile-edit__header">My Company</h3>
+              <hr class="profile-edit__separator profile-edit__separator--main">
               <div class="profile-edit__choosing-logo">
-                <div class="profile-edit__logo"><img src="" alt=""></div>
+                <div class="profile-edit__logo"><img src="img/image-logo-company.png" alt="Логотип компании" width="163" height="100"></div>
                 <div class="profile-edit__logo-settings">
                   <div class="profile-edit__logo-upload">
-                    <input type="file">
-                    <button class="button profile-edit__upload-button" type="button">Обзор</button>
+                    <div class="profile-edit__upload-container">
+                      <button class="button profile-edit__upload-button" type="button">Обзор</button>
+                    </div>
+                    <input class="profile-edit__field-file" type="file">
                   </div>
                   <button class="button profile-edit__changelogo-button">Change logo</button>
                 </div>
