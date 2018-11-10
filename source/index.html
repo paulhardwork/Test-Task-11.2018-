@@ -110,73 +110,75 @@
                   <button class="button profile-edit__changelogo-button">Change logo</button>
                 </div>
               </div>
-              <div class="profile-edit__left-fieldset">
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="country">Country <span class="profile-edit__required-field">*</span></label>
-                  <select name="company-country" id="country">
-                    <option value="Russia">Russia</option>
-                    <option value="USA">USA</option>
-                    <option value="Germany">Germany</option>
-                  </select>
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="region">Region <span class="profile-edit__required-field">*</span></label>
-                  <input class="profile-edit__form-field" type="text" name="company-region" id="region">
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="city">City <span class="profile-edit__required-field">*</span></label>
-                  <input class="profile-edit__form-field" type="text" name="company-city" id="city">
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="nameeng">Company name (Eng) <span class="profile-edit__required-field">*</span></label>
-                  <input class="profile-edit__form-field" type="text" name="company-nameeng" id="nameeng">
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="">Company name (Rus) <span class="profile-edit__required-field">*</span></label>
-                  <input class="profile-edit__form-field" type="text" name="company-namerus" id="namerus">
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="shortdesc">Short description <span class="profile-edit__required-field">*</span></label>
-                  <textarea class="profile-edit__form-field" name="company-shortdesc" id="shortdesc"></textarea>
-                  <span class="profile-edit__fieldcase">100 max</span>
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="fulldesc">Full description <span class="profile-edit__required-field">*</span></label>
-                  <textarea class="profile-edit__form-field" name="company-fulldesc" id="fulldesc"></textarea>
-                  <span class="profile-edit__fieldcase">500 max</span>
-                </div>
-              </div>
-              <div class="profile-edit__right-fieldset">
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="officeaddress">Office address <span class="profile-edit__required-field">*</span></label>
-                  <input class="profile-edit__form-field" type="text" name="company-officeaddress" id="officeaddress">
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="postaddress">Post address <span class="profile-edit__required-field">*</span></label>
-                  <input class="profile-edit__form-field" type="text" name="company-postaddress" id="postaddress">
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="inn">INN <span class="profile-edit__required-field">*</span></label>
-                  <input class="profile-edit__form-field" type="text" name="company-inn" id="inn">
-                </div>
-                <div class="profile-edit__field-box profile-edit__field-box--dynamic">
-                  <div class="profile-edit__wrapper">
-                    <label class="profile-edit__sign-field" for="phonenum">Phone number</label>
-                    <input class="profile-edit__form-field" type="tel" name="company-phonenum" id="phonenum">
+              <div class="profile-edit__fieldsets-container">
+                <div class="profile-edit__fieldset">
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="country">Country <span class="profile-edit__required-field">*</span></label>
+                    <select name="company-country" id="country">
+                      <option value="Russia">Russia</option>
+                      <option value="USA">USA</option>
+                      <option value="Germany">Germany</option>
+                    </select>
                   </div>
-                  <button class="button profile-edit__addfield"><span class="visually-hidden">Добавить дополнительный номер</span></button>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="region">Region <span class="profile-edit__required-field">*</span></label>
+                    <input class="profile-edit__form-field" type="text" name="company-region" id="region">
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="city">City <span class="profile-edit__required-field">*</span></label>
+                    <input class="profile-edit__form-field" type="text" name="company-city" id="city">
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="nameeng">Company name (Eng) <span class="profile-edit__required-field">*</span></label>
+                    <input class="profile-edit__form-field" type="text" name="company-nameeng" id="nameeng">
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="">Company name (Rus) <span class="profile-edit__required-field">*</span></label>
+                    <input class="profile-edit__form-field" type="text" name="company-namerus" id="namerus">
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="shortdesc">Short description <span class="profile-edit__required-field">*</span></label>
+                    <textarea class="profile-edit__form-field" name="company-shortdesc" id="shortdesc"></textarea>
+                    <span class="profile-edit__fieldcase">100 max</span>
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="fulldesc">Full description <span class="profile-edit__required-field">*</span></label>
+                    <textarea class="profile-edit__form-field" name="company-fulldesc" id="fulldesc"></textarea>
+                    <span class="profile-edit__fieldcase">500 max</span>
+                  </div>
                 </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="fax">Fax</label>
-                  <input class="profile-edit__form-field" type="text" name="company-fax" id="fax">
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="email">E-mail <span class="profile-edit__required-field">*</span></label>
-                  <input class="profile-edit__form-field" type="email" name="company-email" id="email">
-                </div>
-                <div class="profile-edit__field-box">
-                  <label class="profile-edit__sign-field" for="site">Web-site</label>
-                  <input class="profile-edit__form-field" type="url" name="company-site" id="site">
+                <div class="profile-edit__fieldset">
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="officeaddress">Office address <span class="profile-edit__required-field">*</span></label>
+                    <input class="profile-edit__form-field" type="text" name="company-officeaddress" id="officeaddress">
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="postaddress">Post address <span class="profile-edit__required-field">*</span></label>
+                    <input class="profile-edit__form-field" type="text" name="company-postaddress" id="postaddress">
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="inn">INN <span class="profile-edit__required-field">*</span></label>
+                    <input class="profile-edit__form-field" type="text" name="company-inn" id="inn">
+                  </div>
+                  <div class="profile-edit__field-box profile-edit__field-box--dynamic">
+                    <div class="profile-edit__wrapper">
+                      <label class="profile-edit__sign-field" for="phonenum">Phone number</label>
+                      <input class="profile-edit__form-field" type="tel" name="company-phonenum" id="phonenum">
+                    </div>
+                    <button class="button profile-edit__addfield"><span class="visually-hidden">Добавить дополнительный номер</span></button>
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="fax">Fax</label>
+                    <input class="profile-edit__form-field" type="text" name="company-fax" id="fax">
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="email">E-mail <span class="profile-edit__required-field">*</span></label>
+                    <input class="profile-edit__form-field" type="email" name="company-email" id="email">
+                  </div>
+                  <div class="profile-edit__field-box">
+                    <label class="profile-edit__sign-field" for="site">Web-site</label>
+                    <input class="profile-edit__form-field" type="url" name="company-site" id="site">
+                  </div>
                 </div>
               </div>
               <hr class="profile-edit__separator">
